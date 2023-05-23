@@ -17,6 +17,7 @@
 		4BF347652A1D1B61000982B0 /* IOS_Asm1_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF347642A1D1B61000982B0 /* IOS_Asm1_APIUITests.swift */; };
 		4BF347672A1D1B61000982B0 /* IOS_Asm1_APIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF347662A1D1B61000982B0 /* IOS_Asm1_APIUITestsLaunchTests.swift */; };
 		4BF347762A1D2747000982B0 /* GOTAPI_Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF347752A1D2747000982B0 /* GOTAPI_Helper.swift */; };
+		4BF347782A1D32E5000982B0 /* DisneyAPI_Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF347772A1D32E5000982B0 /* DisneyAPI_Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4BF347642A1D1B61000982B0 /* IOS_Asm1_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Asm1_APIUITests.swift; sourceTree = "<group>"; };
 		4BF347662A1D1B61000982B0 /* IOS_Asm1_APIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Asm1_APIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4BF347752A1D2747000982B0 /* GOTAPI_Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOTAPI_Helper.swift; sourceTree = "<group>"; };
+		4BF347772A1D32E5000982B0 /* DisneyAPI_Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyAPI_Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				4BF347452A1D1B60000982B0 /* SceneDelegate.swift */,
 				4BF347472A1D1B60000982B0 /* ViewController.swift */,
 				4BF347752A1D2747000982B0 /* GOTAPI_Helper.swift */,
+				4BF347772A1D32E5000982B0 /* DisneyAPI_Helper.swift */,
 				4BF347492A1D1B60000982B0 /* Main.storyboard */,
 				4BF3474C2A1D1B61000982B0 /* Assets.xcassets */,
 				4BF3474E2A1D1B61000982B0 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF347482A1D1B60000982B0 /* ViewController.swift in Sources */,
+				4BF347782A1D32E5000982B0 /* DisneyAPI_Helper.swift in Sources */,
 				4BF347762A1D2747000982B0 /* GOTAPI_Helper.swift in Sources */,
 				4BF347442A1D1B60000982B0 /* AppDelegate.swift in Sources */,
 				4BF347462A1D1B60000982B0 /* SceneDelegate.swift in Sources */,

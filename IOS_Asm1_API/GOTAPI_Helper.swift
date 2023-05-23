@@ -10,11 +10,11 @@ import Foundation
 class GOTAPI_Helper {
     private static let urlString = "https://api.gameofthronesquotes.xyz/v1"
     
-    private static func createURL(character: String) -> URL?{
+    private static func createURL(quote: String) -> URL?{
         var tempURLString = urlString
-        if character != "" {
+        if quote != "" {
             tempURLString.append("/")
-            tempURLString.append(character)
+            tempURLString.append(quote)
         }
         guard
             let url = URL(string: tempURLString)
@@ -24,11 +24,11 @@ class GOTAPI_Helper {
         
     }
     
-    public static func fetch(character: String) async -> Any {
-            let characterURL = createURL(character: character)!
-            let (data, _) = try! await URLSession.shared.data(from: characterURL)
-            
-            let jsonObject = try! JSONSerialization.jsonObject(with: data)
-            return jsonObject
-        }
+    public static func fetch(quote: String) async -> Any {
+        let quoteURL = createURL(quote: quote)!
+        let (data, _) = try! await URLSession.shared.data(from: quoteURL)
+        
+        let jsonObject = try! JSONSerialization.jsonObject(with: data)
+        return jsonObject
+    }
 }
