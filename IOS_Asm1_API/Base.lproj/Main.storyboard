@@ -25,9 +25,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHr-b6-0bI">
-                                <rect key="frame" x="159" y="633" width="75" height="35"/>
+                                <rect key="frame" x="149" y="633" width="95" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Facts API"/>
+                                <connections>
+                                    <action selector="printFactsData" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9b-rh-y78"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJa-Mw-j0n">
                                 <rect key="frame" x="152" y="209" width="89" height="35"/>

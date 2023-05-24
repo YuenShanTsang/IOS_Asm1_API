@@ -10,6 +10,7 @@ import Foundation
 class GOTAPI_Helper {
     private static let urlString = "https://api.gameofthronesquotes.xyz/v1"
     
+    // Function to create the URL
     private static func createURL(quote: String) -> URL?{
         var tempURLString = urlString
         if quote != "" {
@@ -26,8 +27,11 @@ class GOTAPI_Helper {
     
     public static func fetch(quote: String) async -> Any {
         let quoteURL = createURL(quote: quote)!
+        
+        // Perform the network request using URLSession and await the response
         let (data, _) = try! await URLSession.shared.data(from: quoteURL)
         
+        // Convert the received data into a JSON object
         let jsonObject = try! JSONSerialization.jsonObject(with: data)
         return jsonObject
     }
